@@ -23,3 +23,15 @@ class Blockchain:
        )
        genesis_block.mine_block(self.difficulty)
        self.chain.append(genesis_block)
+
+def get_latest_block(self) -> Block:
+    return self.chain[-1]
+
+
+def add_transaction(self, transaction: Dict[str, Any]) -> bool:
+    if not transaction.get("sender") or not transaction.get("recipient"):
+        return False
+    if not transaction.get("amount") or transaction["amount"] <= 0:
+        return False
+    self.pending_transactions.append(transaction)
+    return True
