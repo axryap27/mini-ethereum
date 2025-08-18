@@ -46,12 +46,36 @@ git clone <repository-url>
 cd mini-ethereum
 ```
 
-2. Install dependencies:
+2. Set up environment (choose one option):
+
+**Option A: Use existing Python with pip**
 ```bash
-pip install ecdsa base58
+pip install -r requirements.txt
+python quick_test.py
 ```
 
-3. Run the demonstration:
+**Option B: Use conda environment (recommended)**
+```bash
+conda create -n mini-ethereum python=3.9 -y
+conda activate mini-ethereum
+pip install -r requirements.txt
+python quick_test.py
+```
+
+**Option C: Use provided activation script**
+```bash
+# Run once to set up environment
+conda create -n mini-ethereum python=3.9 -y
+# Then use this script to activate
+source activate.sh
+```
+
+3. Verify installation:
+```bash
+python quick_test.py
+```
+
+If all tests pass, you can run the demonstration:
 ```bash
 python demo.py
 ```
