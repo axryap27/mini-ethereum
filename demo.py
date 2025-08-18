@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/aarya/opt/anaconda3/bin/python
 
 import time
 import json

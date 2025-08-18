@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/aarya/opt/anaconda3/bin/python
 """
 Quick test to verify all components are working
 """

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/aarya/opt/anaconda3/bin/python
 """
 Mini-Ethereum Enhanced - Quick Example Usage
 
