@@ -1,10 +1,43 @@
-[
-    {
-        "index": 0,
-        "timestamp": 1746048556.796629,
-        "transactions": [],
-        "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "hash": "0027e1944cd6822f0e49af04ff69d338b73247593463084f7dba1ec6e8b9ba64",
-        "nonce": 14
+{
+    "chain": [
+        {
+            "index": 0,
+            "timestamp": 1746048556.796629,
+            "transactions": [],
+            "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "0027e1944cd6822f0e49af04ff69d338b73247593463084f7dba1ec6e8b9ba64",
+            "nonce": 14
+        },
+        {
+            "index": 1,
+            "timestamp": 1755545112.441528,
+            "transactions": [
+                {
+                    "sender": "0",
+                    "recipient": "1y2WdAcn9aLekSsLToKxH4GHikexLYfBzST34NwRY5ghR2uJZC",
+                    "amount": 1000.0,
+                    "timestamp": 1755545112.441511,
+                    "gas_fee": 0.0,
+                    "nonce": 0
+                },
+                {
+                    "sender": "0",
+                    "recipient": "1y2WdAcn9aLekSsLToKxH4GHikexLYfBzST34NwRY5ghR2uJZC",
+                    "amount": 10.0,
+                    "timestamp": 1755545112.441526,
+                    "gas_fee": 0
+                }
+            ],
+            "previous_hash": "0027e1944cd6822f0e49af04ff69d338b73247593463084f7dba1ec6e8b9ba64",
+            "hash": "00001e8880a989191f3c0fbbe06b6a7f1cdd9f5cbf6d47c596e59132ba18f540",
+            "nonce": 42867
+        }
+    ],
+    "difficulty": 3,
+    "accounts": {
+        "1y2WdAcn9aLekSsLToKxH4GHikexLYfBzST34NwRY5ghR2uJZC": {
+            "balance": 1010.0,
+            "nonce": 0
+        }
     }
-]
+}
