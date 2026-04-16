@@ -2,3 +2,4 @@ __pycache__/
 technicals.txt
 chain_data.json
 wallet.json
+venv/

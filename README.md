@@ -46,33 +46,16 @@ git clone <repository-url>
 cd mini-ethereum
 ```
 
-2. Set up environment (choose one option):
-
-**Option A: Use existing Python with pip**
+2. Set up a virtual environment and install dependencies:
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-python quick_test.py
-```
-
-**Option B: Use conda environment (recommended)**
-```bash
-conda create -n mini-ethereum python=3.9 -y
-conda activate mini-ethereum
-pip install -r requirements.txt
-python quick_test.py
-```
-
-**Option C: Use provided activation script**
-```bash
-# Run once to set up environment
-conda create -n mini-ethereum python=3.9 -y
-# Then use this script to activate
-source activate.sh
 ```
 
 3. Verify installation:
 ```bash
-python quick_test.py
+python -m unittest test_blockchain -v
 ```
 
 If all tests pass, you can run the demonstration:
@@ -150,7 +133,6 @@ mini-ethereum/
 │   └── mempool.py           # Advanced transaction pool
 ├── User Interfaces
 │   ├── enhanced_cli.py       # Professional CLI
-│   ├── cli.py               # Original CLI (legacy)
 │   └── demo.py              # Interactive demonstration
 ├── Testing & Validation
 │   └── test_blockchain.py    # Comprehensive test suite
